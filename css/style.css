@@ -428,7 +428,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .header h1 {
         left: 0px;
         transform: scale(0.6);
@@ -453,6 +453,11 @@ footer {
         margin: 0 10px;
     }
     
+    .project {
+        margin-top: 20px;
+        margin-left: 20px;
+        transform: scale(0.8);
+    }
     .projects {
         margin-top: 100px;
     }
@@ -488,6 +493,8 @@ footer {
         font-size: 4em;
     }
 }
+
+
 
 @media screen and (max-width: 350px) {
     .header h1 {
