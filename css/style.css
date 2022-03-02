@@ -5,7 +5,7 @@
     user-select: none; 
     font-family: 'Poppins', sans-serif;
 }
-
+/* Palette Colors */
 :root {
     --color-primary: #203239;
     --bg-primary: #203239;
@@ -40,7 +40,7 @@ body {
     color: var(--color-default);
 }
 
-/*     NavBar      */
+/*     Navigation Bar      */
 .navbar {
     position: absolute;
     display: inline;
@@ -111,7 +111,7 @@ main {
 }
 
 
-/*  html bg   */
+/*  html background   */
 
 .html-bg {
 height: 80vh;
@@ -129,7 +129,7 @@ height: 80vh;
 .aboutme-section {
     height: 50vh;
     justify-content: center;
-    align-items: center;
+    align-items: justify;
     display: flex;
 }
 
@@ -137,23 +137,31 @@ height: 80vh;
     margin: 0 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .picture-profile {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    background-color: var(--bg-secondary);
+    width: 240px;
+    height: 260px;
+    position: relative;
+    margin-top: 85px;
 }
 
 #aboutme img {
+    position: absolute;
+    top: -60px;
     width: 200px;
     margin: 20px;
 }
 
 .aboutme-text {
     overflow: hidden;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 600px;
 }
 
 #aboutme h1 {
@@ -162,7 +170,7 @@ height: 80vh;
 }
 
 #aboutme p {
-    font-size: 2em;
+    font-size: 1.4em;
 }
 
 /*     Skills      */
@@ -354,6 +362,11 @@ footer {
     .projects > h1 {
         margin-bottom: 20px;
     }
+    .aboutme-text {
+        margin-top: 20px;
+        width: 500px;
+        
+    }
     #aboutme {
         transform: scale(0.8);
     }
@@ -366,12 +379,9 @@ footer {
     .welcome-cont {
         transform: scale(0.8);
     }
-    #aboutme {
-        transform: scale(0.6);
-    }
+
     .aboutme-text {
-        margin: 5px 50px;
-        width: 350px;
+        margin-left: 100px;
     }
 }
 
@@ -391,6 +401,25 @@ footer {
         transform: scale(0.6);
     }
 
+    .aboutme-section {
+        height: auto;
+
+    }
+    #aboutme {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .picture-profile{
+        display: block;
+    }
+    .aboutme-text {
+        margin-left: 0;
+        margin-top: 0;
+        width: 600px;
+    }
     .skills-sub > h1{
         font-size: 2.5em;
     }
@@ -439,9 +468,13 @@ footer {
     .navbar {
         transform: scale(0.7);
     }
- 
+
+    .aboutme-text{
+        width:400px;
+    }
     #aboutme h1 {
-        font-size: 2em;
+        font-size: 2.5em;
+        margin-bottom: 20px;
     }
 
     #aboutme p {
@@ -508,14 +541,8 @@ footer {
         transform: scale(0.6);
     }
 
-    #aboutme {
-        margin: 0;
-    }
-    #aboutme img{
-        width: 150px;
-    }
-    .aboutme-text {
-        width: 250px;
+    .aboutme-section {
+        transform: scale(0.8);
     }
     .project-sub  h1 {
         font-size: 0.9em;
