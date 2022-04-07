@@ -179,6 +179,7 @@ height: 80vh;
     font-size: 2em;
     position: absolute;
     bottom: -10px;
+    visibility: hidden;
 }
 
 /*     Skills      */
@@ -512,6 +513,10 @@ footer {
 
     #aboutme p {
         font-size: 1.5em;
+    }
+
+    #about-me a {
+        visibility: visible;
     }
 
     .skills {
