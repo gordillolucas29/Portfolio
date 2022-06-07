@@ -5,4 +5,4 @@ You can visit in: https://gordillolucas29.github.io/Portfolio/
 
 # Preview:
 
-![preview](https://github.com/gordillolucas29/Portfolio/blob/master/assets/img/portfolio-preview.jpeg?raw=true)
+![preview](/assets/img/portfolio-preview.jpeg)
