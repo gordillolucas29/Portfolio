@@ -1,201 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://kit.fontawesome.com/be440a05a3.js"
-			crossorigin="anonymous"
-		></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="icon" href="./assets/img/portfolio.ico" />
 
-		<title>Portfolio</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/be440a05a3.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" href="./assets/img/portfolio.ico" />
 
-	<body>
-		<header>
-			<div class="header">
-				<h1><a href="#home">Gordillo</a></h1>
-				<ul class="navbar">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+	<title>Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<h1><a href="#home">Gordillo</a></h1>
+			<ul class="navbar">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<main id="home" class="d-flex f-col">
+		<div class="welcome d-flex f-col f-center">
+			<div class="welcome-cont">
+				<div class="subtitle">
+					<h1 class="welcome-title">Welcome, I'm Lucas.</h1>
+					<h1 class="im">Web Developer.</h1>
+				</div>
+				<p>Trying to be better every day.</p>
 			</div>
-		</header>
-		<main id="home">
-			<div class="welcome">
-				<div class="welcome-cont">
-					<div class="subtitle">
-						<h1 class="welcome-title">Welcome, I'm Lucas.</h1>
-						<h1 class="im">I'm a web developer.</h1>
-					</div>
-					<p>Trying to be better every day.</p>
+
+			<a href="#about-me"><i class="fa-solid fa-arrow-down-long"></i></a>
+		</div>
+		<div class="html-bg"></div>
+		<div class="aboutme-section d-flex f-center" id="about-me">
+			<div id="aboutme" class="d-flex f-center">
+				<div class="picture-profile">
+					<img src="assets/img/no-image.jpg" alt="my profile" />
+					<a id="resume" href="resources/GORDILLO-LUCAS-CV.pdf" target="_blank" title="Resume in spanish">Download
+						Resume</a>
+				</div>
+				<div class="aboutme-text">
+					<h1>About me</h1>
+					<p>
+						I'm currently studying languages and web development in a
+						self-taught way.<br />Eager to grow professionally and acquire new
+						knowledge in the world of web development.
+					</p>
 				</div>
 
-				<a href="#about-me"><i class="fa-solid fa-arrow-down-long"></i></a>
 			</div>
-			<div class="html-bg"></div>
-			<div class="aboutme-section" id="about-me">
-				<div id="aboutme">
-					<div class="picture-profile">
-						<img src="assets/img/no-image.jpg" alt="my profile" />
-					</div>
-					<div class="aboutme-text">
-						<h1>About me</h1>
-						<p>
-							I'm currently studying languages and web development in a
-							self-taught way.<br />Eager to grow professionally and acquire new
-							knowledge in the world of web development.
-						</p>
-					</div>
-				</div>
-				<a href="#skills"><i class="fa-solid fa-arrow-down-long"></i></a>
-			</div>
+		</div>
 
-			<div class="skills" id="skills">
-				<div class="skills-sub">
-					<h1>Skills</h1>
-					<div class="skills-img">
-						<img
-							title="HTML"
-							src="assets/img/icons/html-icon.png"
-							alt="HTML icon"
-						/>
-						<img
-							title="CSS"
-							src="assets/img/icons/css-icon.png"
-							alt="CSS icon"
-						/>
-						<img
-							title="JavaScript"
-							src="assets/img/icons/javascript-icon.png"
-							alt="javascript icon"
-						/>
-						<img
-							title="Bootstrap"
-							src="assets/img/icons/bootstrap-icon.png"
-							alt="Bootstrap icon"
-						/>
-						<img
-							title="SASS"
-							src="assets/img/icons/sass-icon.png"
-							alt="SASS icon"
-						/>
-						<img
-							title="GitHub"
-							src="assets/img/icons/github-icon.png"
-							alt="GitHub icon"
-						/>
-						<img
-							title="Git"
-							src="assets/img/icons/git-icon.png"
-							alt="Git icon"
-						/>
-						<img title="Node" src="assets/img/icons/node.png" alt="Node icon" />
-						<img
-							title="React"
-							src="assets/img/icons/react.png"
-							alt="React icon"
-						/>
-					</div>
-					<a href="#projects"><i class="fa-solid fa-arrow-down-long"></i></a>
+		<div class="skills" id="skills">
+			<div class="skills-sub d-flex f-col f-center">
+				<h1>Skills</h1>
+				<div class="d-flex">
+					<img title="HTML" src="assets/img/icons/html-icon.png" alt="HTML icon" />
+					<img title="CSS" src="assets/img/icons/css-icon.png" alt="CSS icon" />
+					<img title="Bootstrap" src="assets/img/icons/bootstrap-icon.png" alt="Bootstrap icon" />
+					<img title="SASS" src="assets/img/icons/sass-icon.png" alt="SASS icon" />
+					<img title="JavaScript" src="assets/img/icons/javascript-icon.png" alt="javascript icon" />
+					<img title="Typescript" src="assets/img/icons/typescript.png" alt="Typescript icon" />
+					<img title="GitHub" src="assets/img/icons/github-icon.png" alt="GitHub icon" />
+					<img title="Git" src="assets/img/icons/git-icon.png" alt="Git icon" />
+					<img title="Node" src="assets/img/icons/node.png" alt="Node icon" />
+					<img title="Express" src="assets/img/icons/express.png" alt="Express icon" />
+					<img title="React" src="assets/img/icons/react.png" alt="React icon" />
+					<img title="MongoDB" src="assets/img/icons/mongodb.png" alt="MongoDB icon" />
+					<img title="MySQL" src="assets/img/icons/mysql.png" alt="MySQL icon" />
 				</div>
 			</div>
-			<div class="projects" id="projects">
-				<h1 class="myproject-title">My Projects</h1>
-				<div class="project-sub">
-					<div class="project">
-						<img
-							src="assets/img/projects/animendar.png"
-							alt="animendar project preview"
-						/>
+		</div>
+		<div class="projects d-flex f-col" id="projects">
+			<h1 class="myproject-title">My Projects</h1>
+			<div class="project-sub">
+				<div class="project d-flex f-col">
+					<div class="d-flex f-center f-col">
+						<i class="fa-solid fa-calendar"></i>
 						<h1>Animendar</h1>
-						<div class="links">
-							<a href="https://animendar.ml/" target="_blank"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
-							<a
-								href="https://github.com/gordillolucas29/animendar"
-								target="_blank"
-								><i class="fa-brands fa-github"></i
-							></a>
-						</div>
 					</div>
+					<p>
+						Static site, calendar with animes in broadcast.<br>
+						CSS3, HTML5 and JavaScript.</p>
+					<div class="links d-flex">
+						<a href="https://animendar.ml/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
-					<div class="project">
-						<img
-							src="assets/img/projects/blog-page-preview.png"
-							alt="blog page project preview"
-						/>
-						<h1>Blog Page</h1>
-						<div class="links">
-							<a
-								href="https://gordillolucas29.github.io/blog-page/"
-								target="_blank"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
-							<a
-								href="https://github.com/gordillolucas29/blog-page"
-								target="_blank"
-								><i class="fa-brands fa-github"></i
-							></a>
-						</div>
-					</div>
-
-					<div class="project">
-						<img src="assets/img/no-image.jpg" alt="animendar project" />
-						<h1>Soon</h1>
-						<div class="links">
-							<a href=" " target="_blank"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
-							<a href=" " target="_blank"
-								><i class="fa-brands fa-github"></i
-							></a>
-						</div>
-					</div>
-
-					<div class="project">
-						<img src="assets/img/no-image.jpg" alt="animendar project" />
-						<h1>Soon</h1>
-						<div class="links">
-							<a href=" " target="_blank"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
-							<a href=" " target="_blank"
-								><i class="fa-brands fa-github"></i
-							></a>
-						</div>
+						<a href="https://github.com/gordillolucas29/animendar" target="_blank">
+							<i class="fa-brands fa-github"></i>
+						</a>
 					</div>
 				</div>
-			</div>
 
-			<div class="contact" id="contact">
-				<h1>Contact</h1>
-
-				<div>
-					<a href="https://github.com/gordillolucas29" target="_blank"
-						><i title="GitHub" class="fa-brands fa-github"></i
-					></a>
-					<a href="https://www.linkedin.com/in/gordillolucas/" target="_blank"
-						><i title="LinkedIn" class="fa-brands fa-linkedin"></i
-					></a>
-					<a href="" target="_blank"
-						><i title="Instagram" class="fa-brands fa-instagram-square"></i
-					></a>
+				<div class="project d-flex f-col">
+					<div class="d-flex f-center f-col">
+						<i class="fa-solid fa-calendar-days"></i>
+						<h1>Animendar 3.0</h1>
+					</div>
+					<p>Dynamic website, improvements from the previous project.<br>
+						Consumes API from the site "myanimelist".<br>
+						NodeJS, Express, EJS, Axios and Bootstrap.
+					</p>
+					<div class="links d-flex">
+						<a href="https://animendar.herokuapp.com/" target="_blank"><i
+								class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						<a href="https://github.com/gordillolucas29/myanimendar" target="_blank"><i
+								class="fa-brands fa-github"></i></a>
+					</div>
 				</div>
+
+				<div class="project d-flex f-col">
+					<div class="d-flex f-center f-col">
+						<i class="fa-solid fa-magnifying-glass"></i>
+						<h1>Encrypter</h1>
+					</div>
+					<p>
+						A simple page that encrypt/decrypt messages.<br>
+						CSS3, HTML5 and JavaScript.
+					</p>
+					<div class="links d-flex">
+						<a href="https://encrypter.ml/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						<a href="https://github.com/gordillolucas29/encrypter" target="_blank">
+							<i class="fa-brands fa-github"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="project d-flex f-col">
+					<div class="d-flex f-center f-col">
+						<i class="fa-solid fa-gamepad"></i>
+						<h1>Aim Guy</h1>
+					</div>
+					<p>Minigame made with vanilla JavaScript.</p>
+					<div class="links d-flex">
+						<a href="https://gordillolucas29.github.io/doomyguy/" target="_blank"><i
+								class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						<a href="https://github.com/gordillolucas29/doomyguy" target="_blank"><i
+								class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+
 			</div>
-		</main>
-		<footer>
-			<p>made with ♡</p>
-		</footer>
-	</body>
+		</div>
+
+		<div class="contact" id="contact">
+			<h1>Contact</h1>
+
+			<div class="d-flex f-center">
+				<a href="https://github.com/gordillolucas29" target="_blank">
+					<i title="GitHub" class="fa-brands fa-github"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/gordillolucas/" target="_blank">
+					<i title="LinkedIn" class="fa-brands fa-linkedin"></i>
+				</a>
+				<a href="mailto:gordillolucas29@gmail.com">
+					<i title="Mail" class="fa-solid fa-envelope"></i>
+				</a>
+
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>made with ♡</p>
+	</footer>
+</body>
+
 </html>

@@ -5,7 +5,7 @@
 	user-select: none;
 	font-family: 'Poppins', sans-serif;
 }
-/* Palette Colors */
+
 :root {
 	--color-primary: #203239;
 	--bg-primary: #203239;
@@ -14,11 +14,44 @@
 	--color-default: #eeedde;
 }
 
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: var(--bg-thirty);
+}
+
+::-webkit-scrollbar
+{
+	width: 14px;
+	background-color: var(--bg-thirty);
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--bg-primary);
+}
+
+/* Useful classes */
+.d-flex{
+	display: flex;
+}
+.f-col{
+	flex-direction: column;
+}
+
+.f-center{
+	justify-content: center;
+	align-items: center;
+}
+
+/* ------------- */
 body {
 	background-color: var(--bg-thirty);
 }
 
-/*     Header      */
 .header {
 	background-color: var(--bg-primary);
 	color: var(--color-default);
@@ -34,7 +67,7 @@ body {
 	top: 15px;
 	position: absolute;
 	display: inline;
-	left: 10px;
+	left: 40px;
 }
 
 .header a {
@@ -46,7 +79,7 @@ body {
 .navbar {
 	position: absolute;
 	display: inline;
-	right: 0;
+	right: 40px;
 	top: 35%;
 }
 
@@ -67,21 +100,11 @@ body {
 	text-decoration-thickness: 1px;
 }
 
-/*     all content      */
-
-main {
-	display: flex;
-	flex-direction: column;
-}
 
 /*     welcome     */
 .welcome {
 	height: 100vh;
 	background-color: var(--bg-secondary);
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
 }
 
 .subtitle {
@@ -115,7 +138,7 @@ main {
 
 .html-bg {
 	height: 80vh;
-	background: url('https://images.unsplash.com/photo-1583339793403-3d9b001b6008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background: url('../assets/img/background.jpg');
 	filter: blur(3px);
 
 	/* Create the parallax scrolling effect */
@@ -128,9 +151,6 @@ main {
 /*     About Me    */
 .aboutme-section {
 	height: 50vh;
-	justify-content: center;
-	align-items: justify;
-	display: flex;
 	position: relative;
 }
 
@@ -138,9 +158,6 @@ main {
 	margin: 0 10%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .picture-profile {
@@ -149,6 +166,20 @@ main {
 	height: 260px;
 	position: relative;
 	margin-top: 85px;
+}
+
+#resume {
+	position: absolute;
+	bottom: 10px;
+	left: 27px;
+	background-color: var(--bg-primary);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 10px 20px;
+	max-width: 150px;
+	color: var(--bg-thirty);
+	text-decoration: none;
 }
 
 #aboutme img {
@@ -174,7 +205,7 @@ main {
 	font-size: 1.4em;
 }
 
-#about-me a {
+#about-me > a {
 	color: var(--color-primary);
 	font-size: 2em;
 	position: absolute;
@@ -190,10 +221,6 @@ main {
 
 .skills-sub {
 	height: 50vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 .skills a {
@@ -211,12 +238,16 @@ main {
 	font-size: 3em;
 	color: var(--color-primary);
 }
-.skills > div {
-	margin-bottom: 20px;
+
+.skills-sub > div {
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
 }
 
-.skills-img {
-	display: flex;
+.skills > div {
+	margin-bottom: 20px;
+
 }
 
 .skills img {
@@ -247,76 +278,73 @@ main {
 
 /*     projects      */
 .projects {
-	display: flex;
-	flex-direction: column;
 	justify-content: flex-start;
 	margin-bottom: 50px;
 }
 
 .project-sub {
+	justify-items: center;
+  align-items: center;
 	margin-top: 50px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
 
 .project {
-	margin-left: 25%;
 	background-color: var(--bg-secondary);
-	min-height: 200px;
-	max-width: 200px;
 	position: relative;
-	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	min-height: 14rem;
+	width: 20rem;
 }
-.project img {
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	top: -20px;
+.project i {
+	font-size: 2rem;
+	color: var(--color-primary);
+	margin-top: 10px ;
 }
+.project > p {
+	margin: 0 20px;
+	font-size: .8rem;
+	color: var(--color-primary);
+	text-align: center;
+}
+/* .project > img {
+	margin-top: 10px;
+	height: 12rem;
+	width: 20rem;
+} */
+
 .projects > h1 {
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 50px;
-	margin-left: 40px;
 	font-size: 2.5em;
 	color: var(--color-primary);
 }
-.project-sub h1 {
+.project h1 {
 	font-size: 1em;
-	position: absolute;
 	bottom: 15px;
 	color: var(--color-primary);
 }
 
+.links{
+	width: 90%;
+	justify-content:space-between;
+}
+
 .links i {
-	position: absolute;
+	font-size: 1.8rem;
 	text-decoration: none;
-	bottom: 20px;
 	color: var(--color-primary);
-}
-
-.links .fa-solid {
-	left: 10px;
-}
-
-.links .fa-brands {
-	right: 10px;
 }
 
 .project-sub .project:hover {
 	animation: scale-up 0.4s ease-in-out both;
 }
 
-@keyframes scale-up {
-	0% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(1.2);
-	}
-}
 
 /*     Contact      */
 
@@ -327,9 +355,6 @@ main {
 
 .contact div {
 	height: 25vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .contact h1 {
@@ -355,30 +380,12 @@ footer {
 	color: var(--color-default);
 }
 
-@media screen and (max-width: 2560px) {
-	.header h1 {
-		left: 50px;
-	}
-
-	.navbar {
-		right: 60px;
-	}
-
-	.projects > h1 {
-		margin-left: 0;
-	}
-	.project {
-		margin-left: 35%;
-	}
-}
-
 @media screen and (max-width: 1440px) {
-	.project {
-		margin-left: 25%;
-	}
-
 	.projects > h1 {
 		margin-bottom: 20px;
+	}
+	.project-sub {
+		grid-template-columns: repeat(3, 1fr);
 	}
 	.aboutme-text {
 		margin-top: 20px;
@@ -394,13 +401,12 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-	.project {
-		margin-left: 10%;
-	}
 	.welcome-cont {
 		transform: scale(0.8);
 	}
-
+	.project-sub {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.aboutme-text {
 		margin-left: 100px;
 	}
@@ -429,8 +435,6 @@ footer {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 1fr);
-		justify-content: center;
-		align-items: center;
 	}
 	.picture-profile {
 		display: block;
@@ -444,30 +448,14 @@ footer {
 		font-size: 2.5em;
 	}
 
-	.projects > h1 {
-		margin-bottom: 50px;
-	}
-
 	.project-sub {
 		margin-top: 20px;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		overflow-x: hidden;
 	}
 	.project {
-		margin-top: 20px;
-		margin-left: 60px;
-		transform: scale(0.8);
-	}
-	.project img {
-		width: 120px;
-		height: 120px;
-	}
-	@keyframes scale-up {
-		0% {
-			transform: scale(0.8);
-		}
-		100% {
-			transform: scale(0.9);
-		}
+		transform: scale(0.9);
+		margin: 0;
 	}
 
 	.contact h1 {
@@ -478,7 +466,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
 	.header h1 {
 		left: 0px;
 		transform: scale(0.6);
@@ -490,10 +478,6 @@ footer {
 		transform: scale(0.7);
 	}
 
-	.aboutme-section {
-		padding-top: 20px;
-		margin-bottom: 150px;
-	}
 	.aboutme-text {
 		width: 400px;
 	}
@@ -516,7 +500,7 @@ footer {
 	}
 
 	.skills h1 {
-		margin-top: 200px;
+		margin-top: 22rem;
 	}
 
 	.skills-img {
@@ -532,33 +516,14 @@ footer {
 		visibility: visible;
 	}
 
-	.projects {
-		padding: 150px 0;
-	}
-	.project {
-		margin-top: 20px;
-		margin-left: 20px;
-		transform: scale(0.8);
-	}
-
 	.project-sub {
-		margin-top: 20px;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
 	}
 
 	.projects > h1 {
-		margin-top: 10px;
 		font-size: 2em;
-		margin-bottom: 10px;
-	}
-
-	@keyframes scale-up {
-		0% {
-			transform: scale(0.8);
-		}
-		100% {
-			transform: scale(0.9);
-		}
 	}
 
 	.contact {
@@ -571,34 +536,5 @@ footer {
 	.contact a {
 		margin: 0 20px;
 		font-size: 4em;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	.header h1 {
-		left: 0px;
-		transform: scale(0.5);
-	}
-	.navbar {
-		right: -40px;
-	}
-	.navbar {
-		transform: scale(0.6);
-	}
-
-	.aboutme-section {
-		transform: scale(0.8);
-	}
-	.project-sub h1 {
-		font-size: 0.9em;
-	}
-	.project {
-		margin-top: 20px;
-		margin-left: 10px;
-		transform: scale(0.8);
-	}
-	.project img {
-		width: 120px;
-		height: 120px;
 	}
 }
